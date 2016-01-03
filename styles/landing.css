@@ -47,3 +47,7 @@ body.landing{
     color: rgb(233,50,117);
     font-size: 5rem;
 }
+.navbar-link:active {
+    color: rgb(233,50,117);
+    background-color: white;
+}
