@@ -16,7 +16,6 @@ body.landing{
     top:40%;
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     width: 100%;
     text-align: center;
@@ -29,14 +28,11 @@ body.landing{
 
 .selling-points {
     position: relative;
-    
-    
 }
 
 .point {
     
-    position: relative;
-    
+    position: relative;  
     padding: 2rem;
     text-align: center;
 }
