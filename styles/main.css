@@ -1,3 +1,10 @@
+
+*, *:before, *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 html {
     height: 100%;
     font-size: 100;
@@ -53,11 +60,7 @@ body {
     color: rgb(233,50,117);
 }
 }
-*, *:before, *:after {
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-}
+
 
 .container {
     margin: 0 auto;
@@ -97,7 +100,9 @@ body {
     clear: both;
 }
 
-
+.container.narrow {
+    max-width: 56rem;
+}
     
 
 
