@@ -45,10 +45,17 @@ body.landing{
     -webkit-transition-delay: 0.2s;
     -moz-transition-delay: 0.2s;
     transition-delay: 0.2s;
+    transition-timing-function: steps(4, end);
+}
+
+.point:hover {
+    transition-property: font-size;
+  font-size: 20px;
 }
 
 .point .point-title {
     font-size: 1.25rem;
+   
 }
 
 .ion-music-note,
@@ -56,4 +63,5 @@ body.landing{
 .ion-iphone {
     color: rgb(233,50,117);
     font-size: 5rem;
+   
 }
