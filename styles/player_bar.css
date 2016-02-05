@@ -25,6 +25,7 @@
 .player-bar .control-group {
     display: table-cell;
     vertical-align: middle;
+    padding-left: 3rem;
 }
 
 .player-bar .main-controls {
