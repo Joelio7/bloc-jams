@@ -264,11 +264,27 @@ var currentSoundFile = null;
 var currentVolume = 80;
 var $previousButton = $('.main-controls .previous');
 var $nextButton = $('.main-controls .next');
+var $playAndPause = $('.main-controls .play-pause');
+
+var togglePlayFromPlayerBar = function() {
+        var songNumber = parseInt($(this).attr('data-song-number'));
+        var $currentlyPlayingCell = getSongNumberCell(currentlyPlayingSongNumber);
+            if (currentSoundFile && currentSoundFile.isPaused()) {
+                $currentlyPlayingCell.html(pauseButtonTemplate);
+                $(this).html(playerBarPauseButton);
+                currentSoundFile.play();
+            } else if (currentSoundFile) {
+                $currentlyPlayingCell.html(playButtonTemplate);
+                $(this).html(playerBarPlayButton);
+                currentSoundFile.pause();
+            } 
+    };
 
 $(document).ready(function() {
     setCurrentAlbum(albumPicasso);
     setUpSeekBars();
     $previousButton.click(previousSong);
     $nextButton.click(nextSong);
+    $playAndPause.click(togglePlayFromPlayerBar);
 });
 
